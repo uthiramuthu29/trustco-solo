@@ -39,9 +39,6 @@ a {
   color: #000;
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
 
 h1 {
   font-size: 2rem;
@@ -167,7 +164,7 @@ nav ul.login-signup li:nth-child(2) a {
 }
 .banner .banner-links a:nth-child(1) {
   color: white;
-  background-color: #043A53;
+  background-color: #043a53;
 }
 .banner .banner-links a:nth-child(2) {
   color: #043a53;
@@ -179,6 +176,9 @@ nav ul.login-signup li:nth-child(2) a {
   width: 35px;
   margin-right: 16px;
 }
+.banner .banner-mobile-imgs {
+  display: none;
+}
 
 @media (max-width: 600px) {
   nav {
@@ -188,5 +188,46 @@ nav ul.login-signup li:nth-child(2) a {
   nav ul {
     flex-direction: column;
     gap: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .banner {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+  .banner .banner-img-one,
+  .banner .banner-img-two {
+    display: none;
+  }
+  .banner .banner-content h1 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+  .banner .banner-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .banner .banner-links {
+    flex-direction: column;
+    max-width: 250px;
+    margin: 0 auto 60px;
+  }
+  .banner .banner-links a:nth-child(1) {
+    max-width: 150px;
+    margin: 0 auto 32px;
+  }
+  .banner .banner-mobile-imgs {
+    display: flex;
+    justify-content: center;
+  }
+  .banner .banner-mobile-imgs .banner-img-one,
+  .banner .banner-mobile-imgs .banner-img-two {
+    display: block;
+  }
+  .banner .banner-mobile-imgs .banner-img-one img,
+  .banner .banner-mobile-imgs .banner-img-two img {
+    width: 162px;
   }
 }/*# sourceMappingURL=style.css.map */
